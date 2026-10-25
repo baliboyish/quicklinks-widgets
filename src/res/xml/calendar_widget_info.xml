@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Beauty Calendar widget info. Deliberately NO targetCellWidth/Height
+     (API 31 attrs) — they break the API 28 link. minWidth/minHeight do
+     the sizing, as before. -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="320dp"
+    android:minHeight="180dp"
+    android:initialLayout="@layout/widget_calendar"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="1800000"
+    android:widgetCategory="home_screen" />

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Quicklinks AI Assistant — STRIP variant v2, 2026-10-25 (mock A4,
+     user-approved). Per card: icon, name, subtitle — and Gemini gets one
+     extra centered line, "Search", directly under "Google AI" (no bullet),
+     exactly where a second subtitle line would sit. That keeps every
+     card's stack the same height, so all five accent strips line up.
+     Header and feature lists remain guillotined. Same button IDs as
+     widget_layout.xml; tap wiring inherited via QuickLinksStripWidget.
+     Content ≈ 93dp tall: place at 4x2 or stretch the 4x1 slot taller. -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_card"
+    android:padding="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/btn_chatgpt"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/card_chatgpt"
+            android:padding="5dp">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/icon_chatgpt" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+                android:text="ChatGPT" android:textColor="#FFFFFF" android:textSize="11sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="General" android:textColor="#A7F3D0" android:textSize="9sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="Assistant" android:textColor="#A7F3D0" android:textSize="9sp" />
+            <TextView android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp"
+                android:background="@drawable/accent_chatgpt" android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_claude"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/card_claude"
+            android:padding="5dp">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/icon_claude" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+                android:text="Claude" android:textColor="#FFFFFF" android:textSize="11sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="Deep" android:textColor="#FED7AA" android:textSize="9sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="Reasoning" android:textColor="#FED7AA" android:textSize="9sp" />
+            <TextView android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp"
+                android:background="@drawable/accent_claude" android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_deepseek"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/card_deepseek"
+            android:padding="5dp">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/icon_deepseek" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+                android:text="DeepSeek" android:textColor="#FFFFFF" android:textSize="11sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="Technical" android:textColor="#BFDBFE" android:textSize="9sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="Expert" android:textColor="#BFDBFE" android:textSize="9sp" />
+            <TextView android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp"
+                android:background="@drawable/accent_deepseek" android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_muse"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/card_muse"
+            android:padding="5dp">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/icon_muse" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+                android:text="Muse AI" android:textColor="#FFFFFF" android:textSize="11sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="Creative" android:textColor="#E9D5FF" android:textSize="9sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="Studio" android:textColor="#E9D5FF" android:textSize="9sp" />
+            <TextView android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp"
+                android:background="@drawable/accent_muse" android:text="" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_gemini"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="@drawable/card_gemini"
+            android:padding="5dp">
+            <ImageView android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/icon_gemini" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp"
+                android:text="Gemini" android:textColor="#FFFFFF" android:textSize="11sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="Google AI" android:textColor="#BAE6FD" android:textSize="9sp" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1dp"
+                android:text="Search" android:textColor="#E0F2FE" android:textSize="9sp" />
+            <TextView android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="5dp"
+                android:background="@drawable/accent_gemini" android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

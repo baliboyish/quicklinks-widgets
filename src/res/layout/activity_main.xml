@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Quicklinks welcome page, 2026-10-25 (user-approved mock). Widget theme:
+     page #10121E, cards @drawable/bg_card, widget fonts/colors throughout.
+     The two AI Assistant previews are <include>s of the REAL widget layouts,
+     so the welcome page always shows the widgets exactly as they look.
+     The calendar preview is a static mirror (preview_calendar.xml). -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#10121E"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center_vertical">
+            <ImageView android:layout_width="54dp" android:layout_height="54dp" android:src="@mipmap/ic_launcher" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:orientation="vertical">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Quicklinks" android:textColor="#FFFFFF" android:textSize="25sp" android:textStyle="bold" />
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="Different Minds. Different Strengths." android:textColor="#9CA3AF" android:textSize="13sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="Your widgets" android:textColor="#FFFFFF" android:textSize="17sp" android:textStyle="bold" />
+
+        <include layout="@layout/widget_layout" android:layout_width="match_parent" android:layout_height="205dp" android:layout_marginTop="10dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="AI Assistant — full look, with feature lists" android:textColor="#9CA3AF" android:textSize="11sp" />
+
+        <include layout="@layout/widget_layout_strip" android:layout_width="match_parent" android:layout_height="118dp" android:layout_marginTop="16dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="AI Assistant — strip (4x1), the slim one" android:textColor="#9CA3AF" android:textSize="11sp" />
+
+        <include layout="@layout/preview_calendar" android:layout_width="match_parent" android:layout_height="248dp" android:layout_marginTop="16dp" />
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="Beauty Calendar — real toggles + drag sliders" android:textColor="#9CA3AF" android:textSize="11sp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="How to use" android:textColor="#FFFFFF" android:textSize="17sp" android:textStyle="bold" />
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="vertical" android:background="@drawable/bg_card" android:padding="16dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="1" android:textColor="#38BDF8" android:textSize="14sp" android:textStyle="bold" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Long-press your home screen, then tap Widgets." android:textColor="#E5E7EB" android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+                <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="2" android:textColor="#38BDF8" android:textSize="14sp" android:textStyle="bold" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Find Quicklinks and drag a widget onto your screen." android:textColor="#E5E7EB" android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+                <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="3" android:textColor="#38BDF8" android:textSize="14sp" android:textStyle="bold" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Calendar event dots: tap the month title once and allow calendar access." android:textColor="#E5E7EB" android:textSize="14sp" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+                <TextView android:layout_width="24dp" android:layout_height="wrap_content" android:text="4" android:textColor="#38BDF8" android:textSize="14sp" android:textStyle="bold" />
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Tap a volume bar to open the drag slider." android:textColor="#E5E7EB" android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:layout_marginBottom="8dp" android:orientation="horizontal" android:gravity="center">
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/icon_spark" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:text="Created by Muse AI × CopyPaste Department" android:textColor="#C084FC" android:textSize="13sp" android:textStyle="bold" />
+            <ImageView android:layout_width="14dp" android:layout_height="14dp" android:src="@drawable/icon_spark" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

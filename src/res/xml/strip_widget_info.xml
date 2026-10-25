@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- AI Assistant strip (4x1). No targetCellWidth/Height (API 31 attrs
+     break linking against the API 28 platform) and no literal description
+     (aapt2 wants a @string ref) — same rules as the other widget infos. -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="250dp"
+    android:minHeight="64dp"
+    android:initialLayout="@layout/widget_layout_strip"
+    android:resizeMode="horizontal|vertical"
+    android:updatePeriodMillis="0"
+    android:widgetCategory="home_screen" />
