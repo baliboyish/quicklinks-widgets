@@ -1,6 +1,6 @@
 #EXTM3U
 #EXTINF:-1 tvg-id="CNN.us" tvg-logo="https://i.imgur.com/vyrc1I1.png" group-title="US News",CNN
-https://list.iptvcat.net/my_list/s/44a12b5dc421167ebbb4fe85755d1b68.m3u8
+https://turnerlive.warnermediacdn.com/hls/live/586495/cnngo/cnn_slate/VIDEO_0_3564000.m3u8
 #EXTINF:-1 tvg-id="CNBC.us" tvg-logo="https://i.imgur.com/BTasyOy.png" group-title="US News",CNBC
 https://www.youtube.com/c/CNBC/live
 #EXTINF:-1 tvg-id="BloombergTelevision.us" tvg-logo="https://i.imgur.com/VnCcH73.png" group-title="US News",Bloomberg
@@ -13,3 +13,9 @@ https://cbsnews.akamaized.net/hls/live/2020607/cbsnlineup_8/master.m3u8
 https://d1bl6tskrpq9ze.cloudfront.net/hls/master.m3u8?ads.xumo_channelId=99984003
 #EXTINF:-1 tvg-id="FOXLiveNow.us" tvg-logo="https://graph.facebook.com/livenowfox/picture?width=200&height=200" group-title="US News",FOX Live Now
 https://fox-foxnewsnow-vizio.amagi.tv/playlist.m3u8
+#EXTINF:-1 tvg-id="BTV.id" tvg-logo="" group-title="US News",BTV
+https://lnd0t3b922.tenbytecdn.com/ta-sg1/90369cf5-6ac2-411d-b3d0-15fae10a2e2c/master.m3u8?checkedby:iptvcat.net
+#EXTINF:-1 tvg-id="BeritaSatu.id" tvg-logo="https://i.postimg.cc/6pycF7Vx/300px-IDTV.png" group-title="US News",Berita Satu
+https://op-group1-swiftservehd-1.dens.tv/h/h209/index.m3u8?checkedby:iptvcat.net
+#EXTINF:-1 tvg-id="SCTV.id" tvg-logo="https://i.imgur.com/EMmOvnQ.png" group-title="US News",SCTV
+https://op-group1-swiftservehd-1.dens.tv/h/h217/index.m3u8?checkedby:iptvcat.net
